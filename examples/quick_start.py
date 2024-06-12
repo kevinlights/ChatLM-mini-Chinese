@@ -1,11 +1,13 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
-model_id = 'charent/ChatLM-mini-Chinese'
+# model_id = 'charent/ChatLM-mini-Chinese'
+model_id = '/home/kevin/huggingface/ChatLM-mini-Chinese'
 
 # 如果无法连接huggingface，打开以下两行代码的注释，将从modelscope下载模型文件，模型文件保存到'./model_save'目录
-from modelscope import snapshot_download
-model_id = snapshot_download(model_id, cache_dir='../model_save')
+# from modelscope import snapshot_download
+# model_id = snapshot_download(model_id, cache_dir='../model_save')
+# print(model_id)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"device={device}")
