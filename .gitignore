@@ -25,3 +25,4 @@ model_save/*
 !model_save/put_model_files_here
 
 wandb/*
+.venv

@@ -1,6 +1,7 @@
 accelerate==0.25.0
 colorlog==6.8.0
-datasets==2.15.0
+# datasets==2.15.0
+datasets
 datasketch==1.6.4
 fastapi==0.109.1
 fastparquet==2023.10.1
@@ -20,10 +21,13 @@ rich==13.7.0
 safetensors==0.4.1
 sentencepiece==0.1.99
 tokenizers==0.15.0
-torch==2.1.1
+# torch==2.1.1
+torch
 torch_optimizer==0.3.0
-tqdm==4.66.1
-transformers==4.36.0
+# tqdm==4.66.1
+tqdm
+# transformers==4.36.0
+transformers
 trl==0.7.4
 ujson==5.8.0
 uvicorn==0.24.0.post1
